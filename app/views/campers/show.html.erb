@@ -1,0 +1,12 @@
+<h1>Your favorite Camper!!!!</h1>
+
+
+<h3>Camper: <%= @camper.name%></h3>
+<h4>Age: <%= @camper.age%></h4>
+
+<p>Activities you have signed up for!!!
+<ul>
+    <% @camper.activities.each do |activity|%>
+        <li> <%=activity.name%></li>
+    <%end%>
+</ul>
